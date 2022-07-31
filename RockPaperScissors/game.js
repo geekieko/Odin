@@ -17,9 +17,7 @@ function getComputerChoice(){
 }
 
 function playRound(playerSelection,computerSelection){
-    console.log("game");
     computerSelection = getComputerChoice().toLowerCase();
-    console.log(computerSelection);
     playerSelection = "Rock".toLowerCase();
 
     if(computerSelection == "paper" && playerSelection == "rock"){
@@ -30,12 +28,20 @@ function playRound(playerSelection,computerSelection){
 
     }else if(computerSelection == playerSelection){
         console.log("DRAW");
+        
 
     }
     else{
-        console.log("YOU WIN!")
+        console.log("YOU WIN!");
     }
 
 
+}
+
+function game(){
+    for(i=0;i<5;i++){
+        playRound();
+        
+    }
 }
 
