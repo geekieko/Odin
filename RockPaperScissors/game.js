@@ -1,7 +1,5 @@
-function getComputerChoice(computerChoice){
-    console.log("Testing 1");
+function getComputerChoice(){
     var randomChoice = Math.floor(Math.random()*3);
-    console.log(randomChoice);
     switch (randomChoice){
         case 0:
             computerChoice = "Rock";
@@ -17,3 +15,27 @@ function getComputerChoice(computerChoice){
     }
     return computerChoice;
 }
+
+function playRound(playerSelection,computerSelection){
+    console.log("game");
+    computerSelection = getComputerChoice().toLowerCase();
+    console.log(computerSelection);
+    playerSelection = "Rock".toLowerCase();
+
+    if(computerSelection == "paper" && playerSelection == "rock"){
+        console.log("You Lose! Paper beats Rock");
+    }
+    else if(computerSelection == "sissors" && playerSelection == "paper"){
+        console.log("You Lose! Sissors beats Paper");
+
+    }else if(computerSelection == playerSelection){
+        console.log("DRAW");
+
+    }
+    else{
+        console.log("YOU WIN!")
+    }
+
+
+}
+
