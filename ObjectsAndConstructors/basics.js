@@ -5,4 +5,7 @@
 4. Change the value of the name to Pete
 5.Remove the property name from object
 */ 
-let user = {};
+let user = {
+    name:"John",
+    surname:"Smith"
+};
