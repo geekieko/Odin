@@ -6,6 +6,6 @@
 5.Remove the property name from object
 */ 
 let user = {
-    name:"John",
+    name:"Pete",
     surname:"Smith"
 };
