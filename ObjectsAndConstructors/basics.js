@@ -9,3 +9,5 @@ let user = {
     name:"Pete",
     surname:"Smith"
 };
+
+delete user.name;
