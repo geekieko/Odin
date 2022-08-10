@@ -1,21 +1,29 @@
-//basic 2
-
-const favouriteBand = {
-    name:'Beyond',
-    nationality:'Hong Kong',
-    genre:'Pop',
-    members:5,
-    formed:1988,
-    split:2020,
-    album: {
-        name:['ABC','XYZ'],
-        released:[1980,1990]
+/*const cat = {
+    name : 'Bertie',
+    breed : 'Cymric',
+    color : 'white',
+    greeting: function() {
+      console.log('Meow!');
     }
-}
+  }*/
 
-let bandInfo = `The band name is ${favouriteBand.name} `
-console.log(bandInfo)
+  function Cat(name,breed,color){
+    this.name;
+    this.breed;
+    this.color;
+    this.greeting = function(){
+        console.log(`Hello, said ${this.name} the ${this.breed}`)
+    }
+  }
+      
+  const cat1 = new Cat('Bertice');
+  cat1.name = 'Bertice';
+  cat1.breed = 'Cymric';
+  cat1.color = 'Grey'
 
-let para1 = document.createElement('p');
-para1.textContent = bandInfo;
-//section.appendChild(para1);
+  const cat2 = new Cat('James')
+  cat2.name = 'James'
+  cat2.breed = 'I dont know'
+  cat2.color = 'Black'
+  
+  
