@@ -1,26 +1,14 @@
-const playOneName = 'tim'
-const playTwoName = 'jenn'
-const playOneMarker = 'X'
-const playTwoMarker = 'O'
-
-const playerOne = {
-    name:'tim',
-    marker:'X'
+//Object Constuctors - object that needs to be duplicated e.g. player or inventory
+function Player(name,marker){
+    this.name,
+    this.marker,
+    this.sayName = function(){
+        console.log(name)
+    }
 }
 
-const playerTwo = {
-    name:'jenn',
-    marker:'O'
-}
-
-function printName(player){
-    console.log(player.name)
-}
-
-console.log(playOneName)
-console.log(playTwoName)
-
-function gameOver(winningPlayer){
-    console.log('Congratulations!')
-    console.log(winningPlayer.name + 'is the winner!')
-}
+// call function with keyword new
+const player1 = new Player('steve','X')
+const player2 = new Player('jenn','O')
+player1.sayName()
+player2.sayName()
