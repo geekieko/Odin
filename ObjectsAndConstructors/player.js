@@ -1,14 +1,13 @@
-//Object Constuctors - object that needs to be duplicated e.g. player or inventory
-function Player(name,marker){
-    this.name,
-    this.marker,
-    this.sayName = function(){
-        console.log(name)
+//Constructors for Book 
+function Book(title,author,pages,read){
+    this.title
+    this.author
+    this.pages
+    this.read
+    this.info = function(){
+        console.log(title,author,pages,read)
     }
 }
 
-// call function with keyword new
-const player1 = new Player('steve','X')
-const player2 = new Player('jenn','O')
-player1.sayName()
-player2.sayName()
+const theHobbit = new Book('The Hobbit','by J.R.R. Tolkien','295 pages','not read yet')
+console.log(theHobbit.info())
